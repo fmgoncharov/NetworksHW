@@ -9,7 +9,7 @@ def main():
     # Достаём хост из аргументов main
     hostname = sys.argv[1]
     # Задаём пороговые значения
-    mtu_L, mtu_R = 100, 2000
+    mtu_L, mtu_R = 10, 2000
     # Запускаем бинарный поиск по ответу на максимальный mtu
     while mtu_R - mtu_L > 1:
         mtu_M = (mtu_L + mtu_R) // 2
