@@ -5,8 +5,7 @@
 ### Запуск docker-контейнера
 
 ```
-docker build -t mtu .
-docker run -i -t mtu
+docker build -t mtu . && docker run -i -t mtu
 ```
 
 ### Запуск скрипта
