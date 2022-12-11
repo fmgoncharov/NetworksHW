@@ -17,6 +17,7 @@ no aaa new-model
 !
 !
 !
+vtp mode transparent
 !
 !
 !
@@ -29,7 +30,9 @@ spanning-tree mode pvst
 spanning-tree extend system-id
 !
 !
+vlan 10,20 
 !
+! 
 !
 !
 !
@@ -44,12 +47,20 @@ spanning-tree extend system-id
 !
 interface Ethernet0/0
  no shutdown
+ switchport access vlan 10
+ switchport mode access
 !
 interface Ethernet0/1
  no shutdown
+ switchport trunk allowed vlan 10,20
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
 !
 interface Ethernet0/2
  no shutdown
+ switchport trunk allowed vlan 10,20
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
 !
 interface Ethernet0/3
  no shutdown

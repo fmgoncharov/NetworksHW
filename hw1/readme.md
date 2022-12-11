@@ -2,12 +2,12 @@
 
 ## Навигация
 
-### [Конфиги](configs/)
-### [Лабораторная](lab-1.unl/)
+### * [Конфиги](configs/)
+### * [Лабораторная](lab-1.unl/)
 
 ## Топология
 
-![topology](../images/topology.png)
+![topology](../images/topology-1.png)
 
 ## Проверка доступности
 
